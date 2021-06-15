@@ -6,13 +6,37 @@ Credit risk is an inherently unbalanced classification problem, as good loans ea
 ---
 
 ## Results: 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. 
-Use screenshots of your outputs to support your results.
-
-
+- Algorithm: RandomOverSampler
+  - Accuracy Score: 0.63
+  - Precision Score: 0.99
+  - Recall Score: 0.64
+![]()
+- Algorithm: SMOTE
+  - Accuracy Score: 0.63
+  - Precision Score: 0.99
+  - Recall Score: 0.64
+![]()
+- Algorithm: ClusterCentroids
+  - Accuracy Score: 0.52
+  - Precision Score: 0.99
+  - Recall Score: 0.40
+![]()
+- Algorithm: SMOTEENN
+  - Accuracy Score: 0.61
+  - Precision Score: 0.99
+  - Recall Score: 0.54
+![]()
+- Algorithm: BalancedRandomForestClassifier
+  - Accuracy Score: 0.78
+  - Precision Score: 0.99
+  - Recall Score: 0.87
+![]()
+- Algorithm: EasyEnsembleClassifier
+  - Accuracy Score: 0.93
+  - Precision Score: 0.99
+  - Recall Score: 0.94
+![]()
 
 ## Summary: 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. 
-If you do not recommend any of the models, justify your reasoning.
-
-![]()
+In summary, because of how low both scores are the Undersampling model is not recommended for credit card risk analysis.
+For credit card analysis I would say the Easy Ensemble model would be the best recommended to use. It was able to produce both a high accuracy and F-1 score of 0.92 surpassing all other models tested.
